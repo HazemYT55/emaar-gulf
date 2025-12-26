@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ============================================
+         META TAGS AND DOCUMENT SETUP
+         ============================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Emaar Gulf - Premium Real Estate Development Company. Discover luxury properties, residential communities, and commercial spaces across the Gulf region.">
+    <meta name="keywords"
+        content="Emaar Gulf, real estate, luxury properties, Dubai, Abu Dhabi, residential, commercial, development">
+    <meta name="author" content="Emaar Gulf Development">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Emaar Gulf - Premium Real Estate Development">
+    <meta property="og:description" content="Discover luxury properties and communities across the Gulf region">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.emaargulf.com">
+
+    <!-- Document Title -->
+    <title>Emaar Gulf | Premium Real Estate Development Company</title>
+
+    <!-- Favicon Placeholder -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ============================================
+         HEADER AND NAVIGATION SECTION
+         This section contains the sticky navigation bar
+         with desktop and mobile menu functionality
+         ============================================ -->
+    <header class="main-header" id="main-header">
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="nav-container">
+                <!-- Company Logo -->
+                <div class="logo-wrapper">
+                    <a href="#home" class="logo-link" aria-label="Emaar Gulf Home">
+                        <span class="logo-text">Emaar</span>
+                        <span class="logo-accent">Gulf</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu" id="nav-menu" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="#home" class="nav-link active" role="menuitem" data-section="home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="#about" class="nav-link" role="menuitem" data-section="about">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="#projects" class="nav-link" role="menuitem" data-section="projects">
+                            Our Projects
+                        </a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="#statistics" class="nav-link" role="menuitem" data-section="statistics">
+                            Achievements
+                        </a>
+                    </li>
+
+                    <li class="nav-item" role="none">
+                        <a href="#contact" class="nav-link" role="menuitem" data-section="contact">
+                            Contact
+                        </a>
+                    </li>
+                    <!-- Worker Actions -->
+                    <div class="header-worker-actions" id="header-worker-actions" style="display: none;">
+                        <button class="cta-button cta-primary" id="add-project-btn">
+                            + Add New Project
+                        </button>
+                        <!-- Worker Login Button in Navigation -->
+                        <button class="nav-login-btn logged-in" id="nav-login-btn" aria-label="Worker Profile">
+                            Worker Portal
+                        </button>
+                    </div>
+
+                    <!-- Default Login Button (Hidden when logged in) -->
+                    <button class="nav-login-btn" id="default-login-btn" aria-label="Worker Portal Login">
+                        Worker Portal
+                    </button>
+                </ul>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu"
+                    aria-expanded="false" aria-controls="nav-menu">
+                    <span class="hamburger-line line-1"></span>
+                    <span class="hamburger-line line-2"></span>
+                    <span class="hamburger-line line-3"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         HERO SECTION
+         Large hero banner with overlay gradients,
+         multiple text layers, and CTA buttons
+         ============================================ -->
+    <section class="hero-section" id="home" aria-label="Hero Section">
+        <!-- Hero Background with Overlay -->
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-gradient-overlay"></div>
+        </div>
+
+        <!-- Hero Content Container -->
+        <div class="hero-content">
+            <div class="hero-text-wrapper">
+                <!-- Tagline -->
+                <span class="hero-tagline" data-animate="fade-in">
+                    Welcome to Excellence in Real Estate
+                </span>
+
+                <!-- Main Heading -->
+                <h1 class="hero-title" data-animate="slide-up">
+                    Building Dreams,
+                    <span class="title-accent">Crafting Legacies</span>
+                </h1>
+
+                <!-- Hero Description -->
+                <p class="hero-description" data-animate="slide-up-delay">
+                    Emaar Gulf is a leading real estate development company,
+                    creating iconic landmarks and thriving communities across
+                    the Gulf region. With decades of excellence, we transform
+                    visions into architectural masterpieces.
+                </p>
+
+                <!-- Call to Action Buttons -->
+                <div class="hero-cta-wrapper" data-animate="fade-in-delay">
+                    <button class="cta-button cta-primary" id="explore-projects-btn">
+                        Explore Projects
+                    </button>
+                    <button class="cta-button cta-secondary" id="contact-us-btn">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" aria-hidden="true">
+                <span class="scroll-text">Scroll to Discover</span>
+                <div class="scroll-arrow">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT EMAAR GULF SECTION
+         Corporate information including mission,
+         vision, values, and company timeline
+         ============================================ -->
+    <section class="about-section" id="about" aria-label="About Emaar Gulf">
+        <div class="section-container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-subtitle">Who We Are</span>
+                <h2 class="section-title">About Emaar Gulf</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- About Content Grid -->
+            <div class="about-content-grid">
+                <!-- Left Column - Company Description -->
+                <div class="about-text-column">
+                    <h3 class="about-heading">
+                        A Legacy of Excellence in Real Estate Development
+                    </h3>
+                    <p class="about-paragraph">
+                        Founded with a vision to redefine urban living, Emaar Gulf has
+                        emerged as one of the most respected real estate development companies
+                        in the Gulf region. Our portfolio spans residential communities,
+                        commercial complexes, hospitality ventures, and retail destinations
+                        that have become landmarks in their own right.
+                    </p>
+                    <p class="about-paragraph">
+                        With a commitment to quality, innovation, and customer satisfaction,
+                        we have delivered projects that exceed expectations and stand the test
+                        of time. Our team of architects, engineers, and project managers work
+                        tirelessly to ensure every development reflects our core values of
+                        excellence, integrity, and sustainability.
+                    </p>
+                    <p class="about-paragraph">
+                        At Emaar Gulf, we believe that real estate is not just about buildings;
+                        it's about creating communities where people can live, work, and thrive.
+                        From the initial concept to the final handover, we maintain the highest
+                        standards of craftsmanship and attention to detail.
+                    </p>
+                </div>
+
+                <!-- Right Column - Mission, Vision, Values -->
+                <div class="about-cards-column">
+                    <!-- Mission Card -->
+                    <div class="about-card mission-card">
+                        <div class="card-icon">
+                            <span class="icon-circle">M</span>
+                        </div>
+                        <h4 class="card-title">Our Mission</h4>
+                        <p class="card-text">
+                            To create world-class real estate developments that enhance
+                            the quality of life for our residents and contribute to the
+                            economic growth of the communities we serve.
+                        </p>
+                    </div>
+
+                    <!-- Vision Card -->
+                    <div class="about-card vision-card">
+                        <div class="card-icon">
+                            <span class="icon-circle">V</span>
+                        </div>
+                        <h4 class="card-title">Our Vision</h4>
+                        <p class="card-text">
+                            To be the most trusted and innovative real estate developer
+                            in the Gulf region, known for iconic projects that set new
+                            benchmarks in design, quality, and sustainability.
+                        </p>
+                    </div>
+
+                    <!-- Values Card -->
+                    <div class="about-card values-card">
+                        <div class="card-icon">
+                            <span class="icon-circle">V</span>
+                        </div>
+                        <h4 class="card-title">Our Values</h4>
+                        <p class="card-text">
+                            Excellence, Innovation, Integrity, Customer Focus,
+                            Sustainability, and Community Development guide every
+                            decision we make and every project we undertake.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Timeline / Milestones -->
+            <div class="timeline-section">
+                <h3 class="timeline-heading">Our Journey Through the Years</h3>
+                <div class="timeline-container">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2005</span>
+                            <h4 class="timeline-title">Company Founded</h4>
+                            <p class="timeline-text">
+                                Emaar Gulf was established with a vision to transform
+                                the real estate landscape of the Gulf region.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2008</span>
+                            <h4 class="timeline-title">First Major Development</h4>
+                            <p class="timeline-text">
+                                Completed our first flagship residential community,
+                                setting new standards for luxury living.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2012</span>
+                            <h4 class="timeline-title">Regional Expansion</h4>
+                            <p class="timeline-text">
+                                Expanded operations to multiple countries across
+                                the Gulf, establishing a strong regional presence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2016</span>
+                            <h4 class="timeline-title">50th Project Milestone</h4>
+                            <p class="timeline-text">
+                                Celebrated the completion of our 50th project,
+                                a testament to our consistent growth and excellence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2020</span>
+                            <h4 class="timeline-title">Sustainability Initiative</h4>
+                            <p class="timeline-text">
+                                Launched our green building initiative, committing
+                                to sustainable development practices in all projects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 6 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2024</span>
+                            <h4 class="timeline-title">Industry Leadership</h4>
+                            <p class="timeline-text">
+                                Recognized as one of the top real estate developers
+                                in the region with multiple industry awards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROJECTS SECTION
+         Dynamic project showcase with filtering
+         system and modal functionality
+         ============================================ -->
+    <section class="projects-section" id="projects" aria-label="Our Projects">
+        <div class="section-container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-subtitle">Our Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Explore our diverse portfolio of residential, commercial, and
+                    mixed-use developments across the Gulf region.
+                </p>
+            </div>
+
+            <!-- Project Filtering System -->
+            <div class="filter-container" role="group" aria-label="Project Filters">
+                <!-- Status Filter -->
+                <div class="filter-group">
+                    <label class="filter-label" for="status-filter">Filter by Status:</label>
+                    <select class="filter-select" id="status-filter" aria-label="Filter by project status">
+                        <option value="all">All Status</option>
+                        <option value="completed">Completed</option>
+                        <option value="ongoing">Ongoing</option>
+                        <option value="upcoming">Upcoming</option>
+                    </select>
+                </div>
+
+                <!-- Location Filter -->
+                <div class="filter-group">
+                    <label class="filter-label" for="location-filter">Filter by Location:</label>
+                    <select class="filter-select" id="location-filter" aria-label="Filter by location">
+                        <option value="all">All Locations</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="abu-dhabi">Abu Dhabi</option>
+                        <option value="sharjah">Sharjah</option>
+                        <option value="riyadh">Riyadh</option>
+                        <option value="jeddah">Jeddah</option>
+                        <option value="doha">Doha</option>
+                    </select>
+                </div>
+
+                <!-- Category Filter -->
+                <div class="filter-group">
+                    <label class="filter-label" for="category-filter">Filter by Category:</label>
+                    <select class="filter-select" id="category-filter" aria-label="Filter by category">
+                        <option value="all">All Categories</option>
+                        <option value="residential">Residential</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="hospitality">Hospitality</option>
+                        <option value="mixed-use">Mixed-Use</option>
+                        <option value="retail">Retail</option>
+                    </select>
+                </div>
+
+                <!-- Reset Filters Button -->
+                <button class="filter-reset-btn" id="reset-filters-btn" aria-label="Reset all filters">
+                    Reset Filters
+                </button>
+            </div>
+
+            <!-- Project Count Display -->
+            <div class="projects-count" aria-live="polite">
+                Showing <span id="visible-count">0</span> of <span id="total-count">0</span> projects
+            </div>
+
+            <!-- Projects Grid Container -->
+            <div class="projects-grid" id="projects-grid" role="list" aria-label="Project listings">
+                <!-- Project cards will be dynamically inserted by JavaScript -->
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results-message" id="no-results-message" style="display: none;">
+                <p class="no-results-text">No projects match your current filters.</p>
+                <button class="cta-button cta-secondary" id="clear-filters-btn">
+                    Clear All Filters
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         STATISTICS SECTION
+         Animated counters showcasing company
+         achievements and milestones
+         ============================================ -->
+    <section class="statistics-section" id="statistics" aria-label="Company Statistics">
+        <div class="statistics-overlay"></div>
+        <div class="section-container">
+            <!-- Section Header -->
+            <div class="section-header section-header-light">
+                <span class="section-subtitle">Our Achievements</span>
+                <h2 class="section-title">Numbers That Speak</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Statistics Grid -->
+            <div class="statistics-grid">
+                <!-- Statistic Item 1 - Years of Experience -->
+                <div class="stat-item" data-target="19" data-suffix="+">
+                    <div class="stat-icon">
+                        <span class="icon-placeholder">Y</span>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="19">0</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <h3 class="stat-label">Years of Excellence</h3>
+                    <p class="stat-description">
+                        Nearly two decades of transforming the real estate landscape
+                    </p>
+                </div>
+
+                <!-- Statistic Item 2 - Projects Delivered -->
+                <div class="stat-item" data-target="150" data-suffix="+">
+                    <div class="stat-icon">
+                        <span class="icon-placeholder">P</span>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="150">0</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <h3 class="stat-label">Projects Delivered</h3>
+                    <p class="stat-description">
+                        Successfully completed developments across multiple categories
+                    </p>
+                </div>
+
+                <!-- Statistic Item 3 - Countries Served -->
+                <div class="stat-item" data-target="8" data-suffix="">
+                    <div class="stat-icon">
+                        <span class="icon-placeholder">C</span>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="8">0</span>
+                        <span class="stat-suffix"></span>
+                    </div>
+                    <h3 class="stat-label">Countries Served</h3>
+                    <p class="stat-description">
+                        Strong presence across the Gulf and Middle East region
+                    </p>
+                </div>
+
+                <!-- Statistic Item 4 - Happy Clients -->
+                <div class="stat-item" data-target="25000" data-suffix="+">
+                    <div class="stat-icon">
+                        <span class="icon-placeholder">H</span>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="25000">0</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <h3 class="stat-label">Happy Homeowners</h3>
+                    <p class="stat-description">
+                        Families living in our premium residential communities
+                    </p>
+                </div>
+
+                <!-- Statistic Item 5 - Square Meters Developed -->
+                <div class="stat-item" data-target="5" data-suffix="M+">
+                    <div class="stat-icon">
+                        <span class="icon-placeholder">S</span>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="5">0</span>
+                        <span class="stat-suffix">M+ sqm</span>
+                    </div>
+                    <h3 class="stat-label">Area Developed</h3>
+                    <p class="stat-description">
+                        Total square meters of developed real estate
+                    </p>
+                </div>
+
+                <!-- Statistic Item 6 - Awards Won -->
+                <div class="stat-item" data-target="45" data-suffix="+">
+                    <div class="stat-icon">
+                        <span class="icon-placeholder">A</span>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="45">0</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <h3 class="stat-label">Awards Received</h3>
+                    <p class="stat-description">
+                        Industry recognitions for excellence and innovation
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIALS SECTION
+         Client testimonials slider with manual
+         and auto-play controls
+         ============================================ -->
+
+
+    <!-- ============================================
+         CONTACT SECTION
+         Comprehensive contact form with validation
+         and company contact information
+         ============================================ -->
+    <section class="contact-section" id="contact" aria-label="Contact Us">
+        <div class="section-container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Have a question or interested in our projects? We'd love to hear from you.
+                    Fill out the form below or reach us through our contact details.
+                </p>
+            </div>
+
+            <!-- Contact Content Grid -->
+            <div class="contact-grid">
+                <!-- Contact Form Column -->
+                <div class="contact-form-column">
+                    <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+                        <!-- Name Field Group -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="first-name">
+                                    First Name <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" class="form-input" id="first-name" name="firstName"
+                                    placeholder="Enter your first name" required aria-required="true"
+                                    autocomplete="given-name">
+                                <span class="error-message" id="first-name-error" aria-live="polite"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="last-name">
+                                    Last Name <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" class="form-input" id="last-name" name="lastName"
+                                    placeholder="Enter your last name" required aria-required="true"
+                                    autocomplete="family-name">
+                                <span class="error-message" id="last-name-error" aria-live="polite"></span>
+                            </div>
+                        </div>
+
+                        <!-- Email and Phone Row -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="email">
+                                    Email Address <span class="required-indicator">*</span>
+                                </label>
+                                <input type="email" class="form-input" id="email" name="email"
+                                    placeholder="yourname@example.com" required aria-required="true"
+                                    autocomplete="email">
+                                <span class="error-message" id="email-error" aria-live="polite"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">
+                                    Phone Number
+                                </label>
+                                <input type="tel" class="form-input" id="phone" name="phone"
+                                    placeholder="+971 XX XXX XXXX" autocomplete="tel">
+                                <span class="error-message" id="phone-error" aria-live="polite"></span>
+                            </div>
+                        </div>
+
+                        <!-- Subject Field -->
+                        <div class="form-group">
+                            <label class="form-label" for="subject">
+                                Subject <span class="required-indicator">*</span>
+                            </label>
+                            <select class="form-select" id="subject" name="subject" required aria-required="true">
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="project">Project Information</option>
+                                <option value="investment">Investment Opportunities</option>
+                                <option value="partnership">Partnership Proposal</option>
+                                <option value="careers">Careers</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subject-error" aria-live="polite"></span>
+                        </div>
+
+                        <!-- Project Interest Field -->
+                        <div class="form-group">
+                            <label class="form-label" for="project-interest">
+                                Interested In (Optional)
+                            </label>
+                            <select class="form-select" id="project-interest" name="projectInterest">
+                                <option value="">Select a project category</option>
+                                <option value="residential">Residential Properties</option>
+                                <option value="commercial">Commercial Spaces</option>
+                                <option value="hospitality">Hospitality Projects</option>
+                                <option value="retail">Retail Destinations</option>
+                                <option value="mixed-use">Mixed-Use Developments</option>
+                            </select>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="form-group">
+                            <label class="form-label" for="message">
+                                Your Message <span class="required-indicator">*</span>
+                            </label>
+                            <textarea class="form-textarea" id="message" name="message" rows="6"
+                                placeholder="Please describe your inquiry in detail..." required
+                                aria-required="true"></textarea>
+                            <span class="error-message" id="message-error" aria-live="polite"></span>
+                            <span class="character-count" id="message-count">0 / 1000 characters</span>
+                        </div>
+
+                        <!-- Privacy Consent Checkbox -->
+                        <div class="form-group form-checkbox-group">
+                            <input type="checkbox" class="form-checkbox" id="privacy-consent" name="privacyConsent"
+                                required aria-required="true">
+                            <label class="form-checkbox-label" for="privacy-consent">
+                                I agree to the <a href="#" class="inline-link">Privacy Policy</a>
+                                and consent to Emaar Gulf contacting me regarding my inquiry.
+                                <span class="required-indicator">*</span>
+                            </label>
+                            <span class="error-message" id="privacy-error" aria-live="polite"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-actions">
+                            <button type="submit" class="form-submit-btn" id="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">Sending...</span>
+                            </button>
+                        </div>
+
+                        <!-- Form Success Message -->
+                        <div class="form-success-message" id="form-success" style="display: none;" role="alert">
+                            <span class="success-icon">✓</span>
+                            <h3 class="success-heading">Thank You!</h3>
+                            <p class="success-text">
+                                Your message has been successfully submitted.
+                                Our team will get back to you within 24-48 hours.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Information Column -->
+                <div class="contact-info-column">
+                    <!-- Contact Cards -->
+                    <div class="contact-info-card">
+                        <h3 class="info-card-title">Contact Details</h3>
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div class="info-content">
+                                <span class="info-label">Locations</span>
+                                <p class="info-text">
+                                    <strong>Saudi Arabia:</strong><br>
+                                    Al-Riyadh, Al-Damam, Al-Khbbar, Al-Ahsaa<br><br>
+                                    <strong>Egypt:</strong><br>
+                                    Cairo
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📞</span>
+                            <div class="info-content">
+                                <span class="info-label">Phone</span>
+                                <p class="info-text"><a href="tel:+966590103121"
+                                        style="color:inherit;text-decoration:none;">+966 59 010 3121</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📧</span>
+                            <div class="info-content">
+                                <span class="info-label">Email</span>
+                                <p class="info-text"><a href="mailto:hazemyt55@gmail.com"
+                                        style="color:inherit;text-decoration:none;">hazemyt55@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Social Media Links -->
+                    <div class="contact-info-card">
+                        <h3 class="info-card-title">Follow Us</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/emaar_gulf/" target="_blank" class="social-link"
+                                aria-label="Follow us on Instagram">
+                                <span class="social-icon">i</span>
+                            </a>
+                            <a href="https://x.com/emaar_gulf" target="_blank" class="social-link"
+                                aria-label="Follow us on X (Twitter)">
+                                <span class="social-icon">x</span>
+                            </a>
+                            <a href="https://www.linkedin.com/company/emaargulf/" target="_blank" class="social-link"
+                                aria-label="Follow us on LinkedIn">
+                                <span class="social-icon">in</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER SECTION
+         Multi-column footer with links, legal text,
+         and additional navigation
+         ============================================ -->
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-container">
+            <!-- Footer Main Content -->
+            <div class="footer-grid">
+                <!-- Company Info Column -->
+                <div class="footer-column footer-company">
+                    <div class="footer-logo">
+                        <span class="logo-text">Emaar</span>
+                        <span class="logo-accent">Gulf</span>
+                    </div>
+                    <p class="footer-description">
+                        Emaar Gulf is a leading real estate development company,
+                        creating iconic landmarks and thriving communities across
+                        the Gulf region since 2005.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/emaar_gulf/" target="_blank" class="footer-social-link"
+                            aria-label="Instagram">i</a>
+                        <a href="https://x.com/emaar_gulf" target="_blank" class="footer-social-link"
+                            aria-label="X (Twitter)">x</a>
+                        <a href="https://www.linkedin.com/company/emaargulf/" target="_blank" class="footer-social-link"
+                            aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#projects">Our Projects</a></li>
+                        <li><a href="#statistics">Achievements</a></li>
+
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Projects Column -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Project Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#projects">Residential</a></li>
+                        <li><a href="#projects">Commercial</a></li>
+                        <li><a href="#projects">Hospitality</a></li>
+                        <li><a href="#projects">Mixed-Use</a></li>
+                        <li><a href="#projects">Retail</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-column footer-newsletter">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="newsletter-text">
+                        Subscribe to receive updates on new projects and exclusive offers.
+                    </p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email"
+                            aria-label="Email for newsletter">
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        &copy; 2025 Emaar Gulf Development. All Rights Reserved.
+                    </p>
+                    <p class="legal-text">
+                        Emaar Gulf is a registered trademark. All project details,
+                        images, and information are for illustrative purposes only.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         PROJECT DETAILS MODAL
+         Dynamic modal for displaying detailed
+         project information
+         ============================================ -->
+    <div class="modal-overlay" id="project-modal-overlay" style="display: none;" role="dialog" aria-modal="true"
+        aria-labelledby="modal-title">
+        <div class="modal-container" id="project-modal">
+            <!-- Modal Close Button -->
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+                <span class="close-icon">&times;</span>
+            </button>
+
+            <!-- Modal Content - Dynamically Populated -->
+            <div class="modal-content" id="modal-content">
+                <!-- Content will be inserted by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         UPLOAD PROJECT MODAL
+         ============================================ -->
+    <div class="modal-overlay" id="upload-modal-overlay" style="display: none;" role="dialog" aria-modal="true"
+        aria-labelledby="upload-modal-title">
+        <div class="modal-container upload-modal-container">
+            <button class="modal-close-btn" id="upload-modal-close" aria-label="Close upload modal">
+                <span class="close-icon">&times;</span>
+            </button>
+
+            <div class="modal-content">
+                <h2 class="section-title" id="upload-modal-title">Add New Project</h2>
+                <p class="section-description">Upload details, images, and documents for the project.</p>
+
+                <form class="contact-form" id="upload-project-form">
+                    <!-- Basic Info -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Project Title *</label>
+                            <input type="text" class="form-input" id="upload-title" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Location *</label>
+                            <select class="form-select" id="upload-location" required>
+                                <option value="dubai">Dubai</option>
+                                <option value="abu-dhabi">Abu Dhabi</option>
+                                <option value="sharjah">Sharjah</option>
+                                <option value="riyadh">Riyadh</option>
+                                <option value="jeddah">Jeddah</option>
+                                <option value="doha">Doha</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Category *</label>
+                            <select class="form-select" id="upload-category" required>
+                                <option value="residential">Residential</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="hospitality">Hospitality</option>
+                                <option value="mixed-use">Mixed-Use</option>
+                                <option value="retail">Retail</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Status *</label>
+                            <select class="form-select" id="upload-status" required>
+                                <option value="ongoing">Ongoing</option>
+                                <option value="upcoming">Upcoming</option>
+                                <option value="completed">Completed</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Description *</label>
+                        <textarea class="form-textarea" id="upload-description" rows="4" required></textarea>
+                    </div>
+
+                    <!-- File Uploads -->
+                    <div class="form-group">
+                        <label class="form-label">Project Cover Image (JPG/PNG) *</label>
+                        <input type="file" class="form-input" id="upload-image" accept="image/*" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Additional Media (Videos/Images)</label>
+                        <input type="file" class="form-input" id="upload-media" accept="image/*,video/*" multiple>
+                        <small class="character-count">Select multiple files if needed</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Technical Documents (PDF/AutoCAD)</label>
+                        <input type="file" class="form-input" id="upload-docs" accept=".pdf,.dwg,.dxf" multiple>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Upload Project</button>
+                    <p class="character-count" style="text-align: center; margin-top: 10px;">Files will be persisted
+                        locally.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         WORKER LOGIN MODAL
+         Secure login modal for worker access
+         ============================================ -->
+    <div class="login-modal-overlay" id="login-modal-overlay" style="display: none;" role="dialog" aria-modal="true"
+        aria-labelledby="login-modal-title">
+        <div class="login-modal-container">
+            <button class="modal-close-btn" id="login-modal-close" aria-label="Close login modal">
+                <span class="close-icon">&times;</span>
+            </button>
+            <div class="login-modal-content">
+                <h2 class="login-modal-title" id="login-modal-title">Worker Portal Login</h2>
+                <p class="login-modal-subtitle">Access the Emaar Gulf internal system</p>
+                <form class="login-form" id="worker-login-form">
+                    <div class="form-group">
+                        <label class="form-label" for="worker-username">Username</label>
+                        <input type="text" class="form-input" id="worker-username" placeholder="Enter your username"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="worker-password">Password</label>
+                        <input type="password" class="form-input" id="worker-password" placeholder="Enter your password"
+                            required>
+                    </div>
+                    <p class="login-error-message" id="login-error-message" style="display: none;">
+                        Invalid credentials. Please try again.
+                    </p>
+                    <button type="submit" class="form-submit-btn login-submit-btn">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         NOTIFICATION TOAST
+         Toast notification for user feedback
+         ============================================ -->
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+    <!-- ============================================
+         BACK TO TOP BUTTON
+         Scroll to top functionality
+         ============================================ -->
+    <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top" style="display: none;">
+        <span class="arrow-up">↑</span>
+    </button>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
